@@ -5,19 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Caio S. P.</title>
     <link rel="icon" href="./content/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="./pt/style.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 
       <!-- LANGUAGE TOGGLER -->
       <select class="langSelector" id="langSelector" multiple onchange="location = this.value;">
-        <option value="./pt/index.html">Português</option>
-        <option selected>English</option>
+        <option selected>Português</option>
+        <option value="../index.html">English</option>
       </select>
-
-
-
-
 
 <nav>
   <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox ">
@@ -37,7 +33,7 @@
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
       </label>
-      <span>MENU EN</span>
+      <span>MENU PT</span>
     </div>
     <ul>
     <li><label>Item 1</label></li>
@@ -91,5 +87,20 @@
         </ul>
       </div>
 </nav>
+<div class="br">aoeihfoae</div>
+    <script type="text/javascript">       
+$(function() {
+    $(".en").click(function() {
+        $(".m-menu__header").children().eq(0).text("EN");
+  });
+});
+
+$(function() {
+    $(".br").click(function() {
+        //cabeçalho
+        $(".m-menu__header").children().eq(0).text("BR");
+  });
+});
+      </script>
 	</body>
 </html>
