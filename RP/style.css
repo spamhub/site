@@ -20,7 +20,7 @@ nav .m-menu__checkbox {
   max-width: 450px;
   width: calc(100vw - 30px);
   transform: translate3d(-450px, 0, 0);
-  transition: transform 0;
+  transition: transform 0.35s;
   z-index: 2;
   overflow-x: hidden;
   height: 100vh;
@@ -137,20 +137,29 @@ position: absolute;
   border: none;
   overflow: hidden;
   background-color: transparent;
-  margin-left: 65px;}
+  margin-left: 65px;
+  height: 5em;}
   
-#langSelector option{
-  font-size: 12px;
-  padding: 4px;
-  text-align: center;
-  border: white solid 1px;
-  border-radius: 5px;
-  color: white;
-  margin-top: 6px;}
+  #langSelector option {
+    font-size: 12px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 6px;  }
 
-select.langSelector option:hover {
- background: #375a7f;
- cursor: pointer;}
+  select.langSelector option {
+    background: #111b26;
+    color: RGBA(147, 147, 147, 0.25);
+    border: RGBA(147, 147, 147, 0.25) solid 1px;
+  }
 
-select.langSelector option:checked {
-  background-color: #375a7f;}
+  select.langSelector option:checked {
+    border: white solid 1px;
+    color: white;
+    background: #375a7f;
+  }
+
+  select.langSelector option:hover {
+    background: #375a7f;
+    color: white;
+    cursor: pointer;}

@@ -8,13 +8,6 @@
 		<link rel="stylesheet" href="../RP/style.css">
 	</head>
 	<body>
-
-      <!-- LANGUAGE TOGGLER -->
-      <select class="langSelector" id="langSelector" multiple onchange="location = this.value;">
-        <option value="../PT/index.html">Português</option>
-        <option selected>English</option>
-      </select>
-
 <nav>
   <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox ">
   <label class="m-menu__toggle" for="menu">
@@ -33,10 +26,15 @@
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
       </label>
-      <span>MENU EN</span>
+            <!-- LANGUAGE TOGGLER -->
+            <select class="langSelector" id="langSelector" multiple onchange="location = this.value;">
+              <option value="../PT/index.html#PT00">Português</option>
+              <option selected>English</option>
+            </select>
+      <span><a href="#EN00">Caio S. P. (EN)</a></span>
     </div>
     <ul>
-    <li><label>Item 1</label></li>
+    <li><label><a href="#EN01">Item 1</a></label></li>
     <li>
       <label class="a-label__lbl" for="item-2">Item 2</label>
       <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
@@ -76,7 +74,7 @@
           <li><label>Item 2.10</label></li>
           </div>
           </li>
-          <li><label>Item 3</label></li>
+          <li><label><a href="#EN02">Item 3</a></label></li>
           <li><label>Item 4</label></li>
           <li><label>Item 5</label></li>
           <li><label>Item 6</label></li>
@@ -88,4 +86,7 @@
       </div>
 </nav>
 	</body>
-</html>
+  <section id='EN02'><div class="iframeContainer"><iframe src="./02/02.html" scrolling = "yes" class="iframeContent" style="height:100%;width:100%;" frameborder="0";></iframe></div></section>   
+  <section id='EN01'><div class="iframeContainer"><iframe src="./01/01.html" scrolling = "yes" class="iframeContent" style="height:100%;width:100%;" frameborder="0";></iframe></div></section>   
+  <section id='EN00'><div class="iframeContainer"><iframe src="./main.html" scrolling = "yes" class="iframeContent" style="height:100%;width:100%;"frameborder="0";></iframe></div></section>   
+  </html>
